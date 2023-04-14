@@ -7,7 +7,9 @@ export function PostsIndex(props) {
           <h2>{post.title}</h2>
           <img src={post.image} alt={post.title} />
           <br />
-          <button onClick={() => props.onShowPost(post)}>Full post</button>
+          <div className="d-grid gap-2 col-6 mx-auto">
+            <button onClick={() => props.onShowPost(post)}>Full post</button>
+          </div>
         </div>
       ))}
     </div>

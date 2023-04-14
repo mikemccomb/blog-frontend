@@ -1,7 +1,7 @@
 export function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-sm bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             Golb Aidnaltrop
@@ -34,9 +34,9 @@ export function Header() {
                   All Posts
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link disabled">Disabled</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

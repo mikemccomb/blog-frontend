@@ -19,6 +19,7 @@
   left:50%;
   transform: translate(-50%,-50%);
   padding: 1em;
+  border-radius: 30px;
 }
 
 .modal-main button.close {

@@ -1,5 +1,16 @@
+#root {
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  background-image: url("https://s3.amazonaws.com/noupe/2009/10/pattern-02.jpg");
+}
+
 img {
   width: 300px;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 html {
@@ -12,8 +23,9 @@ div {
   margin-bottom: 4px;
 }
 
-button, input, h2 {
+button, input, h2, label, h1, footer {
   background-color: beige;
+  border-radius: 8px;
 }
 
 form {
