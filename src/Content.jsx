@@ -7,6 +7,7 @@ import { Modal } from "./Modal";
 export function Content() {
   const [posts, setPosts] = useState([]);
   const [isPostsShowVisible, setIsPostsShowVisible] = useState(false);
+  const [currentPost, setCurrentPost] = useState({});
 
   const handleIndexPosts = () => {
     axios.get("http://localhost:3000/posts.json").then((Response) => {
@@ -16,8 +17,9 @@ export function Content() {
   };
   useEffect(handleIndexPosts, []);
 
-  const handleShowPost = () => {
+  const handleShowPost = (post) => {
     setIsPostsShowVisible(true);
+    setCurrentPost(post);
   };
 
   const handleClose = () => {
@@ -29,7 +31,10 @@ export function Content() {
       <PostsNew />
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
       <Modal show={isPostsShowVisible} onClose={handleClose}>
-        <p>TEST</p>
+        <h2>{currentPost.title}</h2>
+        {/* <h3>{currentPost.created_at}</h3> */}
+        <p>{currentPost.body}</p>
+        <img src={currentPost.image} alt={currentPost.title} />
       </Modal>
     </div>
   );
