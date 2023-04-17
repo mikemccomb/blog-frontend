@@ -31,3 +31,8 @@ button, input, h2, label, h1, footer {
 form {
   font-weight: bold;
 }
+
+#signup, #posts-new {
+  background-color: steelblue;
+  border-radius: 8px;
+}
