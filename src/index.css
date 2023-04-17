@@ -23,7 +23,7 @@ div {
   margin-bottom: 4px;
 }
 
-button, input, h2, label, h1, footer {
+button, input, h2, label, h1, footer, form button, div button {
   background-color: beige;
   border-radius: 8px;
 }
@@ -32,7 +32,11 @@ form {
   font-weight: bold;
 }
 
-#signup, #posts-new {
+#signup, #posts-new, #login {
   background-color: steelblue;
   border-radius: 8px;
+}
+
+h1, h2 {
+  text-align: center;
 }
