@@ -43,7 +43,9 @@ export function Login() {
         <div>
           Password: <input name="password" type="password" />
         </div>
-        <button type="submit">Login</button>
+        <div className="d-grid gap-2 col-6 mx-auto">
+          <button type="submit">Login</button>
+        </div>
       </form>
     </div>
   );

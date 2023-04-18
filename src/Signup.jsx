@@ -42,7 +42,9 @@ export function Signup() {
         <div>
           Password confirmation: <input name="password_confirmation" type="password" />
         </div>
-        <button type="submit">Signup</button>
+        <div className="d-grid gap-2 col-6 mx-auto">
+          <button type="submit">Signup</button>
+        </div>
       </form>
     </div>
   );

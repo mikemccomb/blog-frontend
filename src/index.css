@@ -35,6 +35,7 @@ form {
 #signup, #posts-new, #login {
   background-color: steelblue;
   border-radius: 8px;
+  margin-bottom: 8px;
 }
 
 h1, h2 {

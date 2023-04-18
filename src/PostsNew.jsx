@@ -47,8 +47,8 @@ export function PostsNew(props) {
             aria-describedby="inputGroup-sizing-default"
           />
         </div>
-        <div>
-          <input type="submit"></input>
+        <div className="d-grid gap-2 col-6 mx-auto">
+          <button type="submit">Publish</button>
         </div>
       </form>
     </div>
