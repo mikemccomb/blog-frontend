@@ -23,16 +23,14 @@ div {
   margin-bottom: 4px;
 }
 
-button, input, h2, label, h1, footer, form button, div button {
+button, input, p, h2, label, h1, footer, form button, div button, #login span, #signup span, #posts-new span {
   background-color: beige;
   border-radius: 8px;
 }
 
-form {
-  font-weight: bold;
-}
 
-#signup, #posts-new, #login {
+
+#signup, #posts-new, #login, #login {
   background-color: steelblue;
   border-radius: 8px;
   margin-bottom: 8px;

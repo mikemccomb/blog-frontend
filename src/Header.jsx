@@ -28,18 +28,23 @@ export function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#posts-new">
+                <Link to="posts/new" className="nav-link">
                   New Post
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#posts-index">
-                  All Posts
-                </a>
-              </li>
-              <li className="nav-item">
-                <Link to="/about" className="nav-link" href="#posts-index">
+                <Link to="/about" className="nav-link">
                   About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/signup" className="nav-link">
+                  Signup
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/login" className="nav-link">
+                  Login
                 </Link>
               </li>
               <li className="nav-item">
