@@ -37,11 +37,29 @@ export function Login() {
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
-        <div>
-          Email: <input name="email" type="email" />
+        <div className="input-group mb-3">
+          <span className="input-group-text" id="inputGroup-sizing-default">
+            Email:
+          </span>
+          <input
+            name="email"
+            type="email"
+            className="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
         </div>
-        <div>
-          Password: <input name="password" type="password" />
+        <div className="input-group mb-3">
+          <span className="input-group-text" id="inputGroup-sizing-default">
+            Password:
+          </span>
+          <input
+            name="password"
+            type="password"
+            className="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
         </div>
         <div className="d-grid gap-2 col-6 mx-auto">
           <button type="submit">Login</button>
