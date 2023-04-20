@@ -6,9 +6,9 @@ export function Header() {
     <header>
       <nav className="navbar navbar-expand-sm bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link to="/" className="navbar-brand">
             Golb Aidnaltrop
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

@@ -57,6 +57,7 @@ export function Content() {
     axios.delete("http://localhost:3000/posts/" + post.id + ".json").then((response) => {
       setPosts(posts.filter((post) => response.id !== post.id));
       handleClose();
+      window.location.href = "/";
     });
   };
 
