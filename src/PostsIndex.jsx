@@ -6,7 +6,6 @@ export function PostsIndex(props) {
         <div key={post.id} className="post">
           <h2>{post.title}</h2>
           <img src={post.image} alt={post.title} />
-          <p>{post.body}</p>
           <br />
           <div className="d-grid gap-2 col-6 mx-auto">
             <button onClick={() => props.onShowPost(post)}>Edit post</button>

@@ -30,10 +30,11 @@ button, input, p, h2, label, h1, footer, form button, div button, #login span, #
 
 
 
-#signup, #posts-new, #login, #login {
+#signup, #posts-new, #login, #login, #post-show {
   background-color: steelblue;
   border-radius: 8px;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 h1, h2 {
