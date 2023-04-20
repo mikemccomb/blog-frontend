@@ -7,6 +7,8 @@ import { PostsShow } from "./PostsShow";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
+import { Route, Routes } from "react-router-dom";
+import { About } from "./About";
 
 export function Content() {
   const [posts, setPosts] = useState([]);
@@ -60,6 +62,9 @@ export function Content() {
 
   return (
     <div className="container">
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Signup />
       <Login />
       <PostsNew onCreatePost={handleCreatePost} />
