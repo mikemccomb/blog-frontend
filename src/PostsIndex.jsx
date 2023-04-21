@@ -18,10 +18,14 @@ export function PostsIndex(props) {
             <a href={`/posts/${post.id}`}>
               <img src={post.image} alt={post.title} />
             </a>
-            <br />
-            <div className="d-grid gap-2 col-6 mx-auto">
-              <button onClick={() => props.onShowPost(post)}>Edit post</button>
-            </div>
+            {localStorage.jwt === undefined ? null : (
+              <>
+                <br />
+                <div className="d-grid gap-2 col-6 mx-auto">
+                  <button onClick={() => props.onShowPost(post)}>Edit post</button>
+                </div>
+              </>
+            )}
           </div>
         ))}
     </div>
