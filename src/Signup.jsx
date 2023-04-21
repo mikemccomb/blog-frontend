@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export function Signup() {
   const [errors, setErrors] = useState([]);
+  const [name, setName] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,6 +31,7 @@ export function Signup() {
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
+        <small>{20 - name.length} characters remaining</small>
         <div className="input-group mb-3">
           <span className="input-group-text" id="inputGroup-sizing-default">
             Name:
@@ -37,6 +39,8 @@ export function Signup() {
           <input
             name="name"
             type="text"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
             className="form-control"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
