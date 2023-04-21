@@ -10,7 +10,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 html {
@@ -23,12 +22,17 @@ div {
   margin-bottom: 4px;
 }
 
-button, input, p, h2, label, h1, footer, form button, #login span, #signup span, #posts-new span {
+button, input, p, h2, label, h1, footer, form button, #login span, #signup span, #posts-new span, #posts-new div button{
   background-color: beige;
   border-radius: 8px;
 }
 
-
+#flash-message {
+  background-color: beige;
+  border-radius: 8px;
+  font-weight: bold;
+  padding-left: 8px;
+}
 
 div button, #signup, #posts-new, #login, #login, #post-show, #search-filter {
   background-color: steelblue;

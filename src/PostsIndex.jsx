@@ -8,10 +8,22 @@ export function PostsIndex(props) {
     <div id="posts-index">
       <div id="search-filter">
         Search filter:{"  "}
-        <input type="search" value={searchFilter} onChange={(event) => setSearchFilter(event.target.value)} />
+        <input
+          type="search"
+          value={searchFilter}
+          onChange={(event) => setSearchFilter(event.target.value)}
+          list="titles"
+        />
       </div>
+
+      <datalist id="titles">
+        {props.posts.map((post) => (
+          <option key={post.id} value={post.title} />
+        ))}
+      </datalist>
+
       {props.posts
-        .filter((post) => post.body.toLowerCase().includes(searchFilter.toLowerCase()))
+        .filter((post) => post.title.toLowerCase().includes(searchFilter.toLowerCase()))
         .map((post) => (
           <div key={post.id} className="post">
             <h2>{post.title}</h2>
