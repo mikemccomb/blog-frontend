@@ -26,7 +26,7 @@ export function Signup() {
   };
 
   return (
-    <div id="signup">
+    <div className="beige" id="signup">
       <h1>Signup</h1>
       <ul>
         {status ? <img src={`https://httpstatusdogs.com/img/${status}.jpg`} /> : null}

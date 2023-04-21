@@ -22,6 +22,7 @@ div {
   margin-bottom: 4px;
 }
 
+/* Make this className beige */
 button, input, p, h2, label, h1, footer, form button, #login span, #signup span, #posts-new span, #posts-new div button{
   background-color: beige;
   border-radius: 8px;
@@ -34,6 +35,7 @@ button, input, p, h2, label, h1, footer, form button, #login span, #signup span,
   padding-left: 8px;
 }
 
+/* make this className steelblue */
 div button, #signup, #posts-new, #login, #login, #post-show, #search-filter {
   background-color: steelblue;
   border-radius: 8px;
